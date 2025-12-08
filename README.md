@@ -54,7 +54,7 @@ There is also a manual bigquery project id that you need to manually set. This d
 project_id = "your-bigquery-project-id"
 
 
-Running the server locally and how to test it.
+### Running the server locally and how to test it.
 
 In your terminal, navigate to the folder you downloaded this mcp server to. Then run the following command:
 
