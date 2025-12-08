@@ -141,7 +141,6 @@ Delegates to mcp_helper for MCP method logic
 ### mcp_helper.py
 handle_request routes initialize, tools/list, tools/call
 handle_tool_call decodes arguments, dispatches to tools, and returns MCP-shaped results
-get_search_console_data handles Gemini prompt → GSC API → formatted text
 
 # Endpoints and Protocol
 JSON-RPC MCP (preferred by this server)
