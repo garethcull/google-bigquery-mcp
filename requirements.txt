@@ -1,0 +1,11 @@
+Flask==2.3.3
+Werkzeug==2.3.7
+gunicorn==23.0.0
+requests==2.31.0
+google-auth==2.27.0
+google-api-python-client==2.119.0
+google-cloud-bigquery==3.23.1
+google-cloud-core==2.4.1
+pandas==2.2.3
+numpy==2.1.3
+
