@@ -134,24 +134,25 @@ This MCP server contains two files:
 2. mcp_helper.py - supporting helper functions to fulfill user requests.
 
 ### app.py
-Flask app with POST /mcp
-Handles JSON-RPC notifications by returning 204 No Content
-Delegates to mcp_helper for MCP method logic
+* Flask app with POST /mcp
+* Handles JSON-RPC notifications by returning 204 No Content
+* Delegates to mcp_helper for MCP method logic
 
 ### mcp_helper.py
-handle_request routes initialize, tools/list, tools/call
-handle_tool_call decodes arguments, dispatches to tools, and returns MCP-shaped results
+* handle_request routes initialize, tools/list, tools/call
+* handle_tool_call decodes arguments, dispatches to tools, and returns MCP-shaped results
 
-# Endpoints and Protocol
-JSON-RPC MCP (preferred by this server)
-POST /mcp
-Content-Type: application/json
-Auth: Authorization: Bearer MCP_TOKEN
-Methods
-initialize → returns protocolVersion, serverInfo, capabilities
-tools/list → returns tools with inputSchema (camelCase)
-tools/call → returns result with content array
-notifications/initialized → must NOT return a JSON-RPC body; respond 204
+### Endpoints and Protocol
+* JSON-RPC MCP (preferred by this server)
+* POST /mcp
+* Content-Type: application/json
+* Auth: Authorization: Bearer MCP_TOKEN
+
+### Methods
+* initialize → returns protocolVersion, serverInfo, capabilities
+* tools/list → returns tools with inputSchema (camelCase)
+* tools/call → returns result with content array
+* notifications/initialized → must NOT return a JSON-RPC body; respond 204
 
 # Adding New Tools
 
@@ -181,8 +182,8 @@ def handle_tools_list():
 
 # Security Considerations
 
-Always require Authorization: Bearer MCP_TOKEN on /mcp
-Keep tool outputs reasonable in size and fully UTF‑8
+* Always require Authorization: Bearer MCP_TOKEN on /mcp
+* Keep tool outputs reasonable in size and fully UTF‑8
 
 # Deploying to Google Cloud Run
 
