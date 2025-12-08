@@ -46,9 +46,9 @@ pip install -r requirements.txt
 
 The following environment variables must be configured:
 
-GCP_BQ_BASE64_KEY - This is a base64‑encoded Google Cloud service account key. Users must encode their JSON key file as base64 before running the MCP server. You can find this referenced in mcp_helper.py.
-GOOGLE_AI_KEY - This is your Gemini API key, which is used to call Gemini 2.5 Flash for SQL generation via natural language. You can find this referenced in mcp_helper.py.
-MCP_TOKEN - Required for authenticating MCP requests. You will need to manually set this value and then use this as part of an auth header in your mcp client to connect to the server. You can find this referenced in app.py.
+1. GCP_BQ_BASE64_KEY - This is a base64‑encoded Google Cloud service account key. Users must encode their JSON key file as base64 before running the MCP server. You can find this referenced in mcp_helper.py.
+2. GOOGLE_AI_KEY - This is your Gemini API key, which is used to call Gemini 2.5 Flash for SQL generation via natural language. You can find this referenced in mcp_helper.py.
+3. MCP_TOKEN - Required for authenticating MCP requests. You will need to manually set this value and then use this as part of an auth header in your mcp client to connect to the server. You can find this referenced in app.py.
 
 There is also a manual bigquery project id that you need to manually set. This doesn't necessarily need to be an environment variable. 
 project_id = "your-bigquery-project-id"
