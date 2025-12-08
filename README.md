@@ -19,9 +19,9 @@ This server requires authorization via a shared token (MCP_TOKEN). All requests 
 
 # Set Up Your Environment
 
-### Create a Virtual Environment (Recommended)
+### Create a Virtual Environment
 
-Ccreate a virtual environment using standard Python venv or Anaconda Navigator.
+Create a virtual environment using standard Python venv or Anaconda Navigator.
 
 #### Using Anaconda Navigator
 
