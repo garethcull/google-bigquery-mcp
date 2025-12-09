@@ -4,7 +4,8 @@ from google.cloud.exceptions import NotFound
 from google.api_core.exceptions import GoogleAPICallError
 from google.oauth2 import service_account
 import pandas as pd
-from datetime import datetime
+import datetime
+from decimal import Decimal
 import numpy as np
 import json
 import uuid
@@ -516,7 +517,7 @@ def bq_sql_gnerator_system_prompt(user_question, schema, table_id):
         system_prompt (string): The system prompt for generating the appropriate BigQuery SQL query
     """
 
-    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")    
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")    
 
     schema_text = "\n".join(
         [f"- {col['name']} ({col['type']}, {col['mode']})" for col in schema]
