@@ -195,7 +195,8 @@ Important Note: Google Cloud Run is a paid service, so you'll need to ensure you
 
 You will also need to add the Environment Variables to your mcp project instance.
 
-This article was extremely helpful for me and teaches you how to deploy a flask application like this this MCP Server to Google Cloud Run: 
+This article was extremely helpful for me and teaches you how to deploy a flask application like this this MCP Server to Google Cloud Run:
+
 https://docs.cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service
 
 # License
@@ -204,7 +205,7 @@ MIT (or your preferred license).
 # Contributions & Support
 Feedback, issues and PRs welcome. Due to bandwidth constraints, I can't offer any timelines for free updates to this codebase. 
 
-If you need help customizing this MCP server or bringing your BigQuery data together to take advantage of this awesom server, I'm available for paid consulting and freelance projects. 
+If you need help customizing this MCP server or bringing your BigQuery data together to take advantage of this awesome server, I'm available for paid consulting and freelance projects. 
 
 Please feel free to reach out and connect w/ me on LinkedIn:
 https://www.linkedin.com/in/garethcull/
